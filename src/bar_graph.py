@@ -55,5 +55,8 @@ plt.xlabel('Date')
 plt.title('Sleep Patterns for February 2023 - Bar Graph Style')
 plt.grid(True, axis='y')
 
+# Invert the y-axis to have time ascending down
+ax.invert_yaxis()
+
 plt.tight_layout()
 plt.savefig('../results/bar_graph.png')
